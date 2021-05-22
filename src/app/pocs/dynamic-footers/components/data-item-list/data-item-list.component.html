@@ -1,0 +1,7 @@
+<div class="dataItems-wrapper">
+  <div  class="dataItems">
+      <ng-container *ngFor="let item of dataItems$$ | async ;trackBy:trackByItemId">
+        <app-data-item [item] = "item" [data]= "data"></app-data-item>
+      </ng-container>
+  </div>
+</div>
